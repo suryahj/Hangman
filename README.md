@@ -46,6 +46,7 @@ The goal is to guess a randomly selected word, one letter at a time. You lose a 
 | File Name               | Description                                       |
 |-------------------------|---------------------------------------------------|
 | `hangman.py`            | Command-line version of the game                  |
+| `updated_hangman.py`| GUI version on Terminal (with help from Claude AI) |
 | `updated_hangman_gui.py`| GUI version using Tkinter (with help from Claude AI) |
 
 ---
@@ -127,17 +128,38 @@ for i in range(len(word)):
 After completing the CLI version, I extended this into a **Tkinter GUI** version with the help of **Claude AI**.
 
 ### GUI Features:
-- Button-based letter input
-- Dynamic display of the word
-- Popup alerts for win/loss
-- Life tracking and restart button
+Create a fully interactive graphical Hangman game where:
+- A random word is selected.
+- The user guesses one letter at a time.
+- The UI displays a hangman drawing that progresses with each wrong guess.
+- The player wins or loses based on the number of incorrect attempts.
 
-### GUI Example:
-```python
-if letter in self.word_dict:
-    idx = self.word_dict[letter].pop(0)
-    self.revealed_positions.append(idx)
-```
+### 🧠 Core Game Mechanics (GUI Version):
+Object-Oriented Programming (OOP): The game is structured as a class HangmanGame.
+
+Encapsulation: Game state is wrapped inside methods and instance variables.
+
+GUI programming: Built using tkinter with event-driven callbacks.
+
+String processing: Used for word display logic (_ vs letter reveal).
+
+Control Flow: Managed using if-else conditions and set logic.
+
+Modularity: Methods like update_display, guess_letter, check_game_over.
+
+### 🧱 GUI Components Breakdown
+
+| Component   | Description                                                 |
+|------------------|----------------------------------------------------------|
+| `tk.Label`           | Used for title, word hints, status messages  |
+| `tk.Entry`           | For letter input       |
+| `tk.Text`            | For ASCII-style hangman drawing               |
+| `tk.Button`            | Guess, New Game, Quit controls                                  |
+| `tk.Frame`            | Used to organize layout sections (left, right, bottom)                               |
+| `tk.StringVar`            | Dynamically trace the letter input                                   |
+
+
+
 
 > 💡 The GUI maintains the same core logic as the CLI version but integrates it into a visual interface using Tkinter's widgets and event handlers.
 
@@ -145,11 +167,14 @@ if letter in self.word_dict:
 
 ## 🖼️ Screenshots
 
-> 🖥️ CLI Version  
-![CLI Example](screenshots/cli_sample.png)
+ ###🖥️ CLI Version  
+<img width="910" height="533" alt="image" src="https://github.com/user-attachments/assets/12ecf61c-a406-4f36-882e-3f9b1fa7895c" />
+<img width="879" height="554" alt="image" src="https://github.com/user-attachments/assets/67d299a7-c8db-4760-bd16-83e6982b8092" />
 
-> 🪟 GUI Version  
-![GUI Example](screenshots/gui_sample.png)
+###🔥 GUI Version  
+<img width="799" height="628" alt="image" src="https://github.com/user-attachments/assets/29c42517-83a4-4466-8c47-3b9d0a831885" />
+<img width="798" height="624" alt="image" src="https://github.com/user-attachments/assets/f018de2c-ac13-404b-89e5-8f9c7cd850f3" />
+<img width="800" height="623" alt="image" src="https://github.com/user-attachments/assets/45b93c2e-744a-4994-b011-9ff545513d2e" />
 
 ---
 
@@ -179,7 +204,7 @@ This project is licensed under the [MIT License](LICENSE)
 
 ## 🙋‍♂️ Author
 
-Made with ❤️ by **[Your Name Here]**  
+Made with ❤️ by **SURYANATH TRIPATHY** 🤞 
 Feel free to connect, fork, or build upon this!
 
 ---
