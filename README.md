@@ -167,11 +167,11 @@ Modularity: Methods like update_display, guess_letter, check_game_over.
 
 ## 🖼️ Screenshots
 
- ###🖥️ CLI Version  
+ ### 🖥️ CLI Version  
 <img width="910" height="533" alt="image" src="https://github.com/user-attachments/assets/12ecf61c-a406-4f36-882e-3f9b1fa7895c" />
 <img width="879" height="554" alt="image" src="https://github.com/user-attachments/assets/67d299a7-c8db-4760-bd16-83e6982b8092" />
 
-###🔥 GUI Version  
+### 🔥 GUI Version  
 <img width="799" height="628" alt="image" src="https://github.com/user-attachments/assets/29c42517-83a4-4466-8c47-3b9d0a831885" />
 <img width="798" height="624" alt="image" src="https://github.com/user-attachments/assets/f018de2c-ac13-404b-89e5-8f9c7cd850f3" />
 <img width="800" height="623" alt="image" src="https://github.com/user-attachments/assets/45b93c2e-744a-4994-b011-9ff545513d2e" />
